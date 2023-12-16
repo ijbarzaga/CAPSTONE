@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  
+  <style>
+    
+    *{
+     margin: 0;
+     padding: 0;
+     
+    }
+    
+    header{
+      top: 0; right: 0; left: 0;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      padding:2rem 2%;
+      z-index: 999;
+      
+    }
+   
+    .logo{
+      display: flex;
+      align-items: 2rem;
+    }
+    .nav-bar a{
+      font-size: 15px;
+      margin-right: 2rem;
+      color: white;
+      text-decoration: none;
+    }
+    
+   .nav-bar a:hover{
+      border-bottom: .1rem solid #e859a6;
+      padding-bottom: .4rem;
+      
+    }
+    
+    .icons a{
+      margin-right: 2rem;
+    } 
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      margin: 100px 0;
+     background-color: black;
+    max-height: 100%;
+    }
+    .col-1{
+      flex-basis: 40%;
+      position: relative;
+      margin-left: 50px;
+      color:white;
+    }
+    .col-1 h1{
+      font-size: 50px;
+      margin-bottom: 1rem;
+      margin-top: 5rem;
+      color: deeppink;
+    }
+    .seemore{
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    .col-2{
+      position: relative;
+      flex-basis: 60%;
+      display: flex;
+      align-items: center;
+      margin-left: 10rem;
+      
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+   
+    <header>
+      <div class="logo">
+        <a href="Homepage.Html"><img src="Shayne's Sweet Logo.jpg" alt="logo" height="60" width="60"></a>
+      </div>
+   
+      <nav class="nav-bar">
+        <a href="Homepage.Html">Home</a>
+        <a href="All Products .Html">All Products</a>
+        <a href="Gallery.Html">Gallery</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </nav>
+   
+      <div class="icons">
+   
+        <a href="#"><img src="shopping-cart-icon-.jpg" height="20px" width="20px"></a>
+   
+        <a href="login-signup.Html"><img src="login-user-icon.png" height="15px" width="15px"></a>
+   
+      </div>
+   
+    </header>
+  
+  <div class="row">
+    
+    <div class="col-1">
+      <h1>Shayne's Sweet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec arcu semper, imperdiet arcu eget, fermentum nulla. Phasellus eget mauris non quam facilisis maximus a quis dolor.
+      </p>
+      
+      <div class="seemore">
+        
+       <div>
+         <h2>See more</h2>
+       </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-2">
+       <div>
+         <img src="Shayne's Sweet Logo.jpg" height="350" width="350">
+       </div>
+    </div>
+    
+    
+    
+  </div>
+
+</body>
+
+</html>

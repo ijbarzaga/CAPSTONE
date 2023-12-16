@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HomePage</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header{
+      top: 0; right: 0; left: 0;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      padding:1rem 2%;
+      z-index: 999;
+    }
+    .logo{
+      display: flex;
+      align-items: 2rem;
+    }
+    .nav-bar a{
+      font-size: 15px;
+      margin-right: 2rem;
+      color: white;
+      text-decoration: none;
+    }
+   .nav-bar a:hover{
+      border-bottom: .1rem solid #e859a6;
+      padding-bottom: .4rem;
+    }
+    .icons a{
+      margin-right: 2rem;
+    }
+    @keyframes slidy {
+      0% { left: 0%; }
+      20% { left: 0%; }
+      25% { left: -100%; }
+      45% { left: -100%; }
+      50% { left: -200%; }
+      70% { left: -200%; }
+      75% { left: -300%; }
+      95% { left: -300%; }
+      100% { left: -400%; }
+    }
+      body { margin: 0; } 
+      div#slider { overflow: hidden; }
+      div#slider figure img { width: 20%; float: left; }
+      div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 15s slidy infinite; 
+    }
+    h2{
+      text-align: center;
+      margin: 2rem;
+      font-size: 2rem;
+      
+    }
+    h3{
+      text-align: center;
+      font-size: 1rem;
+      margin:1rem;
+      
+    }
+    .all-products{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .product{
+      overflow: hidden;
+      background: white;
+      color: #21201e;
+      text-align: center;
+      width: 240px;
+      height: 400px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1.2rem;
+      margin: 4rem;
+    }
+
+    .product .product-title, .product .product-price{
+      font-size: 18px;
+    }
+
+    .product:hover img{
+      scale:  1.1;
+    }
+
+    .product:hover {
+      box-shadow: 10px 20px 30px #eeeeee;
+    }
+
+    .product img {
+      height: 200px;
+      margin: 1rem;
+      transition: all 0.3s;
+    }
+
+    .product a:link, .product a:visited{
+      color: #ececec;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #2c3e50;
+      padding: 1.2rem 3rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+
+    .product a:hover{
+      transform: scale(1.1);
+    }
+
+    h1{
+      text-align: center;
+    }
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      margin: 100px 0;
+      background-color: black;
+      max-height: 100%;
+    }
+    .col-1{
+      flex-basis: 40%;
+      position: relative;
+      margin-left: 50px;
+      color:white;
+    }
+    .col-1 h1{
+      font-size: 50px;
+      margin-bottom: 1rem;
+      margin-top: 5rem;
+      color: deeppink;
+    }
+    .seemore{
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    .col-2{
+      position: relative;
+      flex-basis: 60%;
+      display: flex;
+      align-items: center;
+      margin-left: 10rem;
+    }
+    .menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 3rem 20%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <a href="Homepage.Html"><img src="Shayne's Sweet Logo.jpg" alt="logo" height="60" width="60"></a>
+    </div>   
+    <nav class="nav-bar">
+      <a href="Homepage.Html">Home</a>
+      <a href="All Products .Html">All Products</a>
+      <a href="Gallery.Html">Gallery</a>
+      <a href="AboutUs.Html">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="icons">
+      <a href="#"><img src="shopping-cart-icon-.jpg" height="20px" width="20px"></a>
+      <a href="login-signup.Html"><img src="login-user-icon.png" height="15px" width="15px"></a>
+    </div>
+  </header>
+  <div>
+    <div id="slider">
+      <figure>
+        <img src="20230616_060232_0000.png" alt="cake1">
+        <img src="20230616_060232_0001.png" alt="cake2">
+        <img src="20230616_060232_0002.png" alt="cake3">
+        <img src="20230616_062207_0000.png" alt="cake4">
+      </figure>
+    </div>
+  </div>
+  <section class="products">
+    <h2>This Week's Special</h2>
+    <h3>Try our most popular signature cake and taste the difference!</h3>
+    <div class="all-products">
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Chocolate Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="view-item.Html">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Carrot Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="#">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Vanilla Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="#">Buy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="row">
+    <div class="col-1">
+      <h1>Shayne's Sweet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec arcu semper, imperdiet arcu eget, fermentum nulla. Phasellus eget mauris non quam facilisis maximus a quis dolor.</p>
+      <div class="seemore">
+        <div>
+          <h2>See more</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div>
+        <img src="Shayne's Sweet Logo.jpg" height="350" width="350">
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1>Our Products</h1>
+  </div>
+  <section class="products">
+    <div class="all-products">
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Chocolate Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Carrot Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Vanilla Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Strawberry Cake</h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Carrot Cake
+          </h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy </a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="hot selling cake.jpeg">
+        <div class="product-info">
+          <h4 class="product-title">Vanilla Cake
+          </h4>
+          <p class="product-price">$111</p>
+          <a class="product-btn" href="">Buy </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body> 
+</html> 
